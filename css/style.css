@@ -169,6 +169,17 @@ color: var(--main-color);
     }
 
 }
+@media (max-width: 767.98px) { 
+    #header{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+
+    }
+    #hd-title h1{ font-size: 3rem;}
+
+ }
+
 
 @media (max-width: 624px)  {
     #party-time{ padding: .5rem;
@@ -181,5 +192,6 @@ color: var(--main-color);
         padding-left: 0rem;  
         margin: 0;
     }
+    #hd-title h1{ font-size: 2rem;}
 
 }
