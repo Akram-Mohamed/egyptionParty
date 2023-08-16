@@ -1,0 +1,185 @@
+ @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,500;1,100&family=Pacifico&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --main-color:#D62E33;
+    --secoundry-color:#e38483;
+    --white-color:white;
+    --black-color:black;
+    --text-bg-color:#cbcbcb;
+    --color-overlay:rgba(214, 46, 51 , 0.78);
+    --contact-color :#777777;
+    --left-menue-a-color:  rgba(214, 46, 51 , 0.4);
+}
+body,html{
+    scroll-behavior: unset !important;
+    background-color: var(--white-color);   
+    font-family: 'Segoe UI', "Roboto", sans-serif;
+
+}
+ul{list-style: none;}
+a{
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+/* side nav */
+#side-nav{
+    position: absolute;
+    left: .5rem;
+    top: 50%;
+}
+/* header section  */
+#header{
+    width: 100%;
+    height: 90vh;
+    text-align: justify;
+ background-image: linear-gradient(var(--color-overlay),var(--color-overlay)),
+ url('../images/events-heavenly-header.jpg'); 
+ background-repeat: no-repeat;
+ background-position: center center;
+ background-size: 100% 100%;
+ color: var(--white-color);
+}
+
+#hd-title{padding-top: 200px;}
+#hd-title h1{ font-size: 4rem;}
+
+/* secound section  */
+.singers{
+    background-color: var(--text-bg-color);
+
+}
+
+.singers h3{
+    background-color: var(--secoundry-color);
+    padding: .5rem;
+    color: var(--white-color);
+    margin-bottom: 0;
+    cursor: pointer;
+}
+.toggel{  display: none;}
+#party-time{
+width: 100%;
+height: 50vh;
+background-image: linear-gradient(var(--color-overlay),var(--color-overlay)),
+url('../images/invitation-2508607__340.jpg'); 
+background-repeat: no-repeat;
+background-position: center center;
+background-size: 100% 100%;
+color: var(--white-color);
+padding: 8rem;
+}
+/* third section */
+#party-time div{
+border: 1px solid var(--white-color);
+padding: 3rem 5rem;
+font-size: 1.5rem;
+font-weight: 600;
+}
+/* contact */
+#contact{
+    margin: 10rem 2rem 0 2rem;
+}
+.contact-info strong{
+    font-size:18px;
+}
+.contact-info p , .contact-info ul li i ,.contact p{
+    color:var(--contact-color);
+}
+.contact-info ul li{
+    margin: 2.5rem 0;
+}
+.contact-info ul li i { margin-right: 1rem;}
+.red {
+    color: var(--main-color);
+}
+.social i{
+    width: 40px; 
+    height: 40px; 
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .4s ;
+}
+.social i:hover{
+    background-color: var(--main-color);
+    border: unset;
+}
+.form-control{ margin-bottom: 1rem;
+
+border-color: red;}
+.msg{
+    resize:vertical;
+    height: 20rem; 
+    max-height: 30rem;
+}
+.left-menu{
+    background-color: black;
+    position: fixed;
+    width:0rem;
+    height: 100%;
+    top: 0rem;
+    left: 0rem;
+    z-index: 9999;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.left-menu a{
+    margin-top: 2.5rem;
+    font-size: 1.4rem;
+    text-align: left;
+    margin-left: 2rem;
+    transition: all 0.4s;
+    font-weight: 500;
+}
+.left-menu a:hover{
+       color:var(--left-menue-a-color);
+
+}
+.left-menu .closebtn{
+    font-size: 2rem;
+    text-align: right;
+    margin-right: 2rem;
+}
+.msg-check
+{font-size: 1.2rem;
+}
+.msg-check span{
+color: var(--main-color);
+}
+.openNav{
+   cursor: pointer;
+   font-size:30px;
+   text-align: left;
+}
+
+@media (max-width: 991px)  {
+    #party-time{ padding: 0;
+        width: 100%;
+        height: 30vh;}
+   #party-time div{  
+    font-size: 1rem;
+    padding: 2rem 3rem; } 
+    #contact{
+        padding-left: 2rem;  
+
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 624px)  {
+    #party-time{ padding: .5rem;
+        width: 100%;
+        height: 30vh;}
+   #party-time div{  
+    font-size: 1rem;
+    padding: 1rem 1.5rem; } 
+   #contact{
+        padding-left: 0rem;  
+        margin: 0;
+    }
+
+}
